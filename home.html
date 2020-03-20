@@ -1,0 +1,448 @@
+{% extends "layout.html"%}
+{% block body%}
+<html>
+    <head>
+        <title>BOTNOMATA</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+      <!--  <link rel="stylesheet" href="{{ url_for('static', filename='css/nav.css') }}">-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/contact1.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/pre.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/font.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+  <!--   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/nav-media.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/home-media.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/chat-bot.css') }}">
+    <!--    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylee.css') }}">-->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    </head>
+    <body onload="myFunction()">
+      <!-- Preloader -->
+      <div class="container-fluid" id="loading">
+       <h1>WELCOME</h1>
+   </div>
+
+    <body>
+
+    <nav class="navbar fixed-top navbar-expand-lg" id="nav">
+      <div class="container-fluid">
+        <h3><img src="/static/img/logo.jpeg" width="20%"></h3>
+        <button class="navbar-toggler navbar-toggler-right navbar-light " type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="color:black"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/register">Sign Up</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!-- /NAVIGATION background-position:center;  background-repeat:no-repeat;-->
+
+    <div class="row landing-row"  style="background-image:url(static/img/background.jpeg)">
+  
+      <div class="col-lg-3 col-xs- landing-col"> <!-- landing-col -->
+        <div class="row logo-row"> <!--logo-row-->
+          <div class="col-lg-12 col-xs-12 logo-col"> <!--logo-col-->
+      <img src="static/img/csr.png" >   <!--logo--->
+          </div> <!--/logo-col -->
+        </div> <!-- /logo-row -->
+        <div class="row text-row"> <!--text-row-->
+          <div class="col-lg-12 col-xs-12 text-col"> <!--text-col-->
+          <h4 style="color:Skyblue;"><b>&nbsp;&nbsp;&nbsp;&nbsp;Where Flora Meets Tech</b></h4>   <!--Text-->
+          </div> <!--/text-col-->
+        </div><!--/text-row-->
+        <div class="row btn-row"> <!-- btn-row -->
+          <div class="col-lg-12 col-xs-12 btn-col"> <!-- btn-col -->
+          <br>
+          </div> <!--/btn-col -->
+        </div>  <!-- /btn-row -->
+      </div> <!-- /landing-col -->
+    </div><!-- /landing-row -->
+</div> <!-- MAIN_DV -->
+
+<!-- /.row -->
+
+<div class="custom" style="background-color:lightblue">
+  <div class="row">
+      <div class="col-lg-6">
+     <br> <h1 id="csr"><span style="color:#b70;">What Botnomata project do ?</span></h1><br>
+     <p>
+       The very nature of our project at the Botnomata, connects us to the Humane aspect of our being.Today environment is at the par level of degradation, so there should be efforts in direction of saving the same by whatever way possible.
+    <p>
+      Our way for doing the same is better exploration of our natural habitat, by finding the suitable Flower type knowing its Sepal length, Sepal width, Petal length and Petal width input by the Botanist, students with flora majors and so as Machine Learning Enthusiast!
+    </p>
+    <p>
+      We believe that informatics can help discover the environment more immensly. So we have made a Machine learning application which helps the Scientists discover the crucial aspects behind the classification algorithms like K-Nearst Neighbour and Logistic Regression.
+      </p>
+      <br><br><br><br>
+    </div>
+    <div class="col-lg-6">
+      <img class="img-fluid rounded mb-4" src="/static/img/logo.jpeg"  style="width: 30rem!important; height: 30rem !important;padding-top: 95px;">
+    </div>
+
+  </div>
+</div>
+</div>
+<!--endd-->
+
+
+<!---ABOUT US---->
+      <div class="custom" style="background-color:lightblue">
+            <div class="team-heading" style="background-color:grey">
+                <h1 id="member" align="center"><span style="color:#f17;text-shadow: 2px 2px royalblue ;">About Our Team</span></h1>
+               <h3 align="center">We are the Students-cum-Enthusiast Developers completing our Graudation degree in Kalinga Institue Of Industrial Technology in Computer science & engineering,we have tried to implement the Flask model of python. </h3>
+            </div>
+
+            <br><br><br><br><br>
+             <div class="row">
+               <div class="col-lg-4 col-sm-6 portfolio-item">
+                 <div class="card h-100">
+                   <a href="#"><img class="card-img-top" src="/static/img/sid.jpeg" alt="" style="width: 24.9rem!important; height: 27rem !important;"></a>
+                   <div class="card-body">
+                     <h4 class="card-title">
+                       Sidharth Purohit</h4>
+                       <h6>Backend Developer</h6>
+                     <p class="card-text">
+                       Sidharth is an aspiring programmer,having experience in machine learning architecture.He codes in C++, Java,Python and C (Programming Language). He is a technical development professional with a Bachelor's in Technology focused in Computer Science from KIIT University, Bhubaneswar.
+                    </p><br>
+                    <div class="row">
+                            <div class="col-sm-12 col-md-12 con-social">
+                                    <p id="social">
+                                  &nbsp;&nbsp;&nbsp;          <a href="http://www.facebook.com/aquaregia0609"><i class="fab fa-facebook-f i"></i></a> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp
+                                            <a href="https://linkedin.com/sidharth-purohit-78012596"><i class="fab fa-linkedin  i"></i></a>  &nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;
+                                            <a href="http://www.github.com/sidart069"><i class="fab fa-github  i"></i></a> &nbsp;
+                                    </p>
+                            </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="col-lg-4 col-sm-6 portfolio-item">
+                 <div class="card h-100">
+                   <a href="#"><img class="card-img-top" src="/static/img/shubhra.jpg" alt="" style="width: 24.9rem!important; height: 27rem !important;"></a>
+                   <div class="card-body">
+                     <h4 class="card-title">
+                       Shubra Suman</h4>
+                       <h6>Android Development and Documentation</h6>
+
+                     <p class="card-text">
+                           Shubhra is an aspiring programmer,having experience in machine learning architecture.He codes in C++, Android development and C (Programming Language). She is a technical development professional with a Bachelor's in Technology focused in Computer Science from KIIT University, Bhubaneswar.
+                       </p><br>
+                       <div class="row">
+                            <div class="col-sm-12 col-md-12 con-social">
+                                    <p id="social">
+                                            &nbsp;&nbsp;&nbsp;     <a href="http://www.facebook.com/profile.php?id=100009220427719"><i class="fab fa-facebook-f i"></i></a> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp
+                                            <a href="https://linkedin.com/shubhra-suman-3125a5135"><i class="fab fa-linkedin  i"></i></a>  &nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;
+                                            <a href="http://www.github.com/xyz"><i class="fab fa-github  i"></i></a> &nbsp;
+                                    </p>
+                            </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="col-lg-4 col-sm-6 portfolio-item">
+                 <div class="card h-100">
+                   <a href="#"><img class="card-img-top" src="/static/img/niw.jpeg" alt="" style="width: 24.9rem!important; height: 27rem !important;"></a>
+                   <div class="card-body">
+                     <h4 class="card-title">
+                       Niwanshu Maheswari</h4>
+                                            <h6>Data Analyst & Machine Learning Aspirant</h6>
+                      <p class="card-text">He has been doing programming from more than a year now .He is a undergraduate student with an interest in data science.Having some experience as he applied some ML algorithms like regression , classification on small datasets and work on some real world problems . Always willing to innovate new things to improve the existing technology .</p><br>
+
+                      <div class="row">
+                            <div class="col-sm-12 col-md-12 con-social">
+                                    <p id="social">
+                                            &nbsp;&nbsp;&nbsp;      <a href="http://www.facebook.com/xyz"><i class="fab fa-facebook-f i"></i></a> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp
+                                            <a href="https://linkedin.com/xyz"><i class="fab fa-linkedin  i"></i></a>  &nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;
+                                            <a href="http://www.github.com/xyz"><i class="fab fa-github  i"></i></a> &nbsp;
+                                    </p>
+                            </div>
+                     </div>
+
+                   </div>
+                 </div>
+               </div>
+               <div class="col-lg-4 col-sm-6 portfolio-item">
+                 <div class="card h-100">
+                   <a href="#"><img class="card-img-top" src="/static/img/saksham.jpg" alt="" style="width: 24.9rem!important; height: 27rem !important;"></a>
+                   <div class="card-body">
+                     <h4 class="card-title">
+                      Saksham Jaiswal</h4>
+                                           <h6>Machine Learning Aspirant</h6>
+                     <p class="card-text">Saksham is a passionate coder who loves coding and have experience in machine learning projects.He participated in many workshop and project. Fascinated in many programming languages like C, C++, Java and Python.</p><br>
+                     <div class="row">
+                            <div class="col-sm-12 col-md-12 con-social">
+                                    <p id="social">
+                                            &nbsp;&nbsp;&nbsp;<a href="http://www.facebook.com/xyz"><i class="fab fa-facebook-f i"></i></a> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp
+                                            <a href="https://linkedin.com/xyz"><i class="fab fa-linkedin  i"></i></a> &nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;
+                                            <a href="http://www.github.com/xyz"><i class="fab fa-github  i"></i></a> &nbsp;
+                                    </p>
+                            </div>
+                     </div>
+                    </div>
+                 </div>
+               </div>
+               <div class="col-lg-4 col-sm-6 portfolio-item">
+                 <div class="card h-100">
+                   <a href="#"><img class="card-img-top" src="/static/img/suraj.jpg" alt="" style="width: 24.9rem!important; height: 27rem !important;"></a>
+                   <div class="card-body">
+                     <h4 class="card-title">
+                       Suraj Kumar Mishra</h4>
+                                           <h6>Web Developer</h6>
+                     <p class="card-text">Suraj is working with web technologies and did some cool projects and freelance work while pursuing B.Tech.He inclined towards Android development and UI/UX as well, therefore he always try to come up with better design for his projects.
+                            During his internships,he has worked on projects with a team or even solo, sometimes.He has worked in numerous technologies including frontend and backend.</p><br>
+                                               <div class="row">
+                                                    <div class="col-sm-12 col-md-12 con-social">
+                                                            <p id="social">
+                                                          &nbsp;&nbsp;&nbsp;         <a href="http://www.facebook.com/surajkumar.mishra.3954"><i class="fab fa-facebook-f i"></i></a>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp
+                                                                    <a href="https://linkedin.com/suraj-kumar-mishra-7b2242130"><i class="fab fa-linkedin  i"></i></a> &nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;
+                                                                    <a href="http://www.github.com/skm25199"><i class="fab fa-github  i"></i></a> &nbsp;
+                                                            </p>
+                                                    </div>
+                                             </div>
+                                            </div>
+                 </div>
+               </div>
+
+             </div>
+         </div>
+
+         <!---/ABOTUS-->
+
+              <!--CONTACT-->
+ <div class="contact-wrap" id="contact">
+  <div class="container-fluid landing-gradient">
+        <div class="container contact-container">
+                <div class="row service-head-wrap">
+                        <div class="col-sm-12 col-md-12 service-text-wrap">
+                          <p id="tell" class="tell"><h1><u>CONTACT US</u></h1></p>
+                          <p id="tag-line-1" class="tag-line-1"><h2><u>Reach out for a new project or just say hello</u></h2></p>
+                        </div>
+                      </div>
+
+                      </div>
+        </div>
+        <div class="container contact-area">
+            <div class="row">
+                    <div class="col-sm-8 col-md-8 form-area">
+                            <div class="row">
+                                <div class="col-sm-11 col-md-11 form-sub-area">
+                                    <div class="row">
+                                        <div class="col-md-12 col-xs-12">
+                                            <h3 class="con-head">
+                                                SEND US A MESSAGE
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 form-1">
+                                            <!-- form -->
+                                            <form name="sentMessage" id="contactForm" novalidate action="" method="POST" enctype="multipart/form-data">
+                                                    <div class="control-group form-group">
+                                                      <div class="controls">
+                                                        <label>Full Name:</label>
+                                                        <input type="text" class="form-control" name="name" required data-validation-required-message="Please enter your name.">
+                                                        <p class="help-block"></p>
+                                                      </div>
+                                                    </div>
+
+
+                                                    <div class="control-group form-group">
+                                                      <div class="controls">
+                                                        <label>Email Address:</label>
+                                                        <input type="email" class="form-control" name="email" required data-validation-required-message="Please enter your email address.">
+                                                      </div>
+                                                    </div>
+                                                    <div class="control-group form-group">
+                                                      <div class="controls">
+                                                        <label>Message:</label>
+                                                        <textarea rows="2" cols="200" class="form-control" name="message" name="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                                                      </div>
+                                                    </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12">
+                                                <div class="con-btn">
+                                                    <button type="submit" class="btn btn-success con-sub-button" name="submit" id="sendButton">SUBMIT</button>
+                                               </form>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 con-area">
+                                <div class="row">
+                                        <div class="col-md-12 col-xs-12">
+                                            <h5 class="con-head">
+                                            <u>CONTACT INFO</u>
+                                            </h5>
+                                        </div>
+                                </div>
+                                <div class="row  form-t-area">
+                                    <div class="col-xs-12 col-md-12 f-c">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-12 con-main-t">
+                                                    <h5 class="con-m-h">Where To Find Us</h5>
+                                                    <p class="con-m-t">Campus-15,CSE-1,5th Sem Kiit University, Patia,Bhubaneswar,Orissa</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                                <div class="col-sm-12 col-md-12 con-main-t">
+                                                        <h5 class="con-m-h">Email Us At</h5>
+                                                        <p class="con-m-t">1705078@kiit.ac.in</p>
+                                                        <p class="con-m-t">1705051@kiit.ac.in</p>
+                                                        <p class="con-m-t">1705067@kiit.ac.in</p>
+                                                        <p class="con-m-t">1805951@kiit.ac.in</p>
+                                                        <p class="con-m-t">1705075@kiit.ac.in</p>
+                                                </div>
+                                            </div>                                            <div class="row">
+                                                    <div class="col-sm-12 col-md-12 con-main-t">
+                                                            <h5 class="con-m-h">Call Us At</h5>
+                                                            <p class="con-m-t">Phone: 7992329570<br>
+                                                                    Mobile: 7684858206</p>
+                                                    </div>
+                                             </div>
+                                             <div class="row">
+                                                    <div class="col-sm-12 col-md-12 con-social">
+                                                            <p id="social">
+                                                                    <a href="http://www.facebook.com/stoned.techies"><i class="fab fa-facebook-f i"></i></a> &nbsp;&nbsp;&nbsp;
+                                                                    <a href="https://twitter.com/StonedTechie"><i class="fab fa-twitter  i"></i></a> &nbsp;&nbsp;&nbsp;
+                                                                    <a href="http://www.instagram.com/stoned_techies"><i class="fab fa-instagram  i"></i></a> &nbsp;
+                                                            </p>
+                                                    </div>
+                                             </div>
+                                    </div>
+                                </div>
+                        </div>
+            </div>
+        </div>
+
+  </div>
+</div>
+
+<!--/CONTACT-->
+
+ 
+ <!-- footer area -->
+ <footer class="footer-distributed" id="footer">
+
+  <div class="footer-left">
+
+    <h3><img src="/static/img/logo.jpeg" width="7%"></h3>
+
+    <p class="footer-links">
+      <a href="#">HOME</a>
+      ·
+      <a href="#">ABOUT US</a>
+      ·
+      <a href="#">LOGIN</a>
+      ·
+      <a href="#">FAQ</a>
+      ·
+      <a href="#">CONTACT</a>
+    </p>
+
+    <p class="footer-company-name">BOTNOMATA &copy; 2019</p>
+  </div>
+
+  <div class="footer-center">
+
+    <div>
+      <i class="fas fa-map-marker-alt"></i>
+      <p><span>
+
+
+        KIIT UNIVERSITY ,PATIA</span> KIIT, Bhubaneswar , Odisha,751024</p>
+    </div>
+
+    <div>
+      <i class="fas fa-phone-volume"></i>
+      <p>+91-7684858206</p>
+      <p>+91-7684858206</p>
+    </div>
+
+    <div>
+      <i class="far fa-envelope"></i>
+      <p><a href="skm@yahoo.com">skm@yahoo.com</a></p>
+    </div>
+
+  </div>
+
+  <div class="footer-right">
+
+    <div class="footer-icons">
+
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter-square"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-github-square"></i></a>
+
+    </div>
+
+  </div>
+
+  <div class="container-fluid clearfix">
+    <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center copy">Designed & Developed By <a href="#" target="_blank" class="st">Botnomata devs</a> <i class="mdi mdi-heart text-danger"></i></span>
+  </div>
+
+</footer>
+
+
+
+<!-- SCRIPTS -->
+        <!-- jQuery library -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="static/js/pre.js"></script>
+         <script src="static/js/home-nav.js"></script>
+         <script src="static/js/counter.js"></script>
+         <script src="static/js/chat-bot.js"></script>
+         <script src="static/js/brandandmodel.js"></script>
+
+
+         <script type="text/javascript">
+          function gotoPage(select){
+              window.location = select.value;
+          }
+
+// contact
+sr.reveal('#contact .tell,.tag-line-1 ',{
+        origin: 'bottom',
+    });
+    sr.reveal('#contact .contact-area ',{
+        origin: 'left',
+        duration: 3000,
+        scale:0.1,
+    });
+
+
+          </script>
+         <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
+
+
+
+{% endblock %}
